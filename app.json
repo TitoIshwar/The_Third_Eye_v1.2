@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "The_Third_Eye",
+    "slug": "The_Third_Eye",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/splash-logo.png",
+    "scheme": "thethirdeye",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-screen.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Allow access to microphone for voice commands",
+        "NSSpeechRecognitionUsageDescription": "Allow speech recognition for commands"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/splash-logo.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.anonymous.The_Third_Eye",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/splash-logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-camera",
+      [
+        "@react-native-voice/voice",
+        {
+          "microphonePermission": "Allow The Third Eye to access the microphone for voice commands.",
+          "speechRecognitionPermission": "Allow The Third Eye to recognize your speech."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
