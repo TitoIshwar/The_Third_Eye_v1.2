@@ -38,13 +38,8 @@
     "plugins": [
       "expo-router",
       "expo-camera",
-      [
-        "@react-native-voice/voice",
-        {
-          "microphonePermission": "Allow The Third Eye to access the microphone for voice commands.",
-          "speechRecognitionPermission": "Allow The Third Eye to recognize your speech."
-        }
-      ]
+      "expo-audio",
+      "expo-speech-recognition"
     ],
     "experiments": {
       "typedRoutes": true
